@@ -133,7 +133,7 @@ script.js
 			{id: 2, name: 'Nexus 5', amount: 12},
 			{id: 3, name: 'Xperia Z1', amount: 13},
 			{id: 4, name: 'Motorola X', amount: 8},
-			{id: 3, name: 'Galaxy S4', amount: 21}
+			{id: 5, name: 'Galaxy S4', amount: 21}
 		];
 	}
 
