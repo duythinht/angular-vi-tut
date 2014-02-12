@@ -5,7 +5,9 @@ Hướng dẫn AngularJS bằng tiếng Việt
 AngularJS là một full-stack Javascript framework, được phát triển bởi Google. Ban đầu mục tiêu của Angular là để xây dựng các ứng dụng dựa trên tiêu chuẩn MVC (Model - View - Controller), sau đó Angular dần phát triển và tiến gần hơn về với MVVM và MVP. Sau đó Google đã định nghĩa nó lại là MVW (Model-View-Whatever) để ám chỉ Angular là một framework có tính chất "whatever works for you".
 
 ## Cài đặt
-Việc cài đặt luôn là điều khởi đầu của việc học bất cứ framework nào. Bởi vì là Javascript, nên Angular cũng được sử dụng bằng cách "import" file js vào HTML document. Sau đây là một HTML Template chuẩn của Angular
+Việc cài đặt luôn là điều khởi đầu của việc học bất cứ framework nào. Bởi vì là Javascript, nên Angular cũng được sử dụng bằng cách "import" file js vào HTML document. Sau đây là một HTML Template chuẩn của AngularJS
+
+index.html
 
 	<!DOCTYPE html>
 	<html ng-app>
@@ -47,6 +49,7 @@ Trong ví dụ trên bạn thấy:
 
 ## Controller
 Ở phần Data-binding, bạn đã biết cách bind một dữ liệu như thế nào. Vấn đề là ta cần phải lấy dữ liệu và để xử lý trong script thì ta phải dùng đến controler. Dưới đây là một ví dụ mẫu về Angular Controller:
+
 index.html
 
 	<!DOCTYPE html>
@@ -94,6 +97,7 @@ Như vậy giá trị model "name" đã được gán mặc định, bạn có t
 ## Objects & List data & ngRepeat
 Khác với nhiều loại framework khác, trong AngularJS, dữ liệu được sử dụng là ở dạng nguyên bản của Javascript (array, objects), bạn không cần quan tâm quá nhiều đến các định nghĩa về đối tượng hay class.
 Với dữ liệu dạng list, angular cung cấp một công cụ hiệu quả để thực hiện lặp dữ liệu. Ví dụ:
+
 index.html
 
 	<!DOCTYPE html>
