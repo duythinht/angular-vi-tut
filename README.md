@@ -43,4 +43,4 @@ Data-binding của Angular thực sự mạnh mẽ, việc sử dụng data-bind
 
 Trong ví dụ trên bạn thấy:
 * Chúng ta có một ng-model và nó có tên là "name"
-* Ở phía dưới, chúng ta có một câu chào, và model "name được" bind vào đó. Khi bạn thay đổi value của model "name" câu chào sẽ thay đổi.
+* Ở phía dưới, chúng ta có một câu chào, và model "name" được bind vào đó thông qua cặp thẻ {{ và }}. Khi bạn thay đổi value của model "name" câu chào sẽ thay đổi.
