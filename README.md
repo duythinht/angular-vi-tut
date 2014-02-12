@@ -90,3 +90,50 @@ Trong một số trường hợp, đôi khi ta cần phải gán giá trị mặ
 	}
 
 Như vậy giá trị model "name" đã được gán mặc định, bạn có thể chạy lại ứng dụng để thấy sự thay đổi.
+
+## Objects & List data & ngRepeat
+Khác với nhiều loại framework khác, trong AngularJS, dữ liệu được sử dụng là ở dạng nguyên bản của Javascript (array, objects), bạn không cần quan tâm quá nhiều đến các định nghĩa về đối tượng hay class.
+Với dữ liệu dạng list, angular cung cấp một công cụ hiệu quả để thực hiện lặp dữ liệu. Ví dụ:
+index.html
+
+	<!DOCTYPE html>
+	<html ng-app>
+	<head>
+		<title>Hello World</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div ng-controller="ExampleCtrl">
+			<table border="1" cellspacing="0">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Amount</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="item in list">
+						<td>{{ item.id }}</td>
+						<td>{{ item.name }}</td>
+						<td>{{ item.amount }}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+	</html>
+
+script.js
+
+	ExampleCtrl = function($scope) {
+		$scope.list = [
+			{id: 1, name: 'iPhone 5s', amount: 10},
+			{id: 2, name: 'Nexus 5', amount: 12},
+			{id: 3, name: 'Xperia Z1', amount: 13},
+			{id: 4, name: 'Motorola X', amount: 8},
+			{id: 3, name: 'Galaxy S4', amount: 21}
+		];
+	}
+
