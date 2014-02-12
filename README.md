@@ -137,3 +137,6 @@ script.js
 		];
 	}
 
+* Trong file html, thuộc tính ng-repeat sẽ đánh dấu sự bắt đầu của vòng lặp
+* ng-repeat sẽ lấy từng "item" từ "list" sau đó dựng lên html tương ứng.
+* list được định nghĩa như một mảng các objects bình thường, như bạn thấy việc xử lý dữ liệu của AngularJS không khác gì với việc xử lý dữ liệu của Javascript cả.
