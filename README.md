@@ -88,3 +88,5 @@ Trong một số trường hợp, đôi khi ta cần phải gán giá trị mặ
 			alert('You have entered: ' + $scope.name);
 		}
 	}
+
+Như vậy giá trị model "name" đã được gán mặc định, bạn có thể chạy lại ứng dụng để thấy sự thay đổi.
