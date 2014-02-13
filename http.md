@@ -121,4 +121,4 @@ Kết quả sau khi định dạng của filter sẽ như sau:
 	default currency symbol ($): $1,244.00
 	custom currency identifier (USD$): USD$1,244.00
 
-Tiếp theo: [Module & Realtime application](http://google.com)
+Tiếp theo: [Module & Realtime application](https://github.com/duythinht/angular-vi-tut/blob/master/module.md)
