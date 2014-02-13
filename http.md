@@ -85,3 +85,40 @@ get.json (JSON for get data)
 * Quá trình ví dụ trên chỉ mới implements ở bên phía front-end, bạn cần viết thêm các mã nguồn cho backend (/update | /delete/:id)
 * Tương tự, Angular cũng cung cấp $http.post để thực hiện xử lý ajax cho method POST
 * Xem thêm chi tiết về $http tại: http://docs.angularjs.org/api/ng.$http
+
+## Filter
+Trong ví dụ ở phía trên, trong phần document bạn có thể thấy chúng ta có cú pháp đề định dạng dữ liệu dạng JSON
+
+	{{ list | json}}
+
+AngularJS cung cấp sẵn cho chúng ta một số các filter hữu ích, dùng để định dạng cũng như lọc dữ liệu, ví dụ về định dạng tiền tệ:
+
+index.html
+
+	<!doctype html>
+	<html ng-app>
+	<head>
+	    <script src="http://code.angularjs.org/1.2.12/angular.min.js"></script>
+	    <script src="script.js"></script>
+	</head>
+	<body>
+	    <div ng-controller="Ctrl">
+	        <input type="number" ng-model="amount"><br>
+	        default currency symbol ($):<span id="currency-default">{{amount | currency}}</span>
+	        custom currency identifier (USD$): <span>{{amount | currency:"USD$"}}</span>
+	    </div>
+	</body>
+	</html>
+
+script.js
+
+	Ctrl = function($scope) {
+		$scope.amount = 1234.56;
+	}
+
+Kết quả sau khi định dạng của filter sẽ như sau:
+	
+	default currency symbol ($): $1,244.00
+	custom currency identifier (USD$): USD$1,244.00
+
+Tiếp theo: [Module & Realtime application](http://google.com)
