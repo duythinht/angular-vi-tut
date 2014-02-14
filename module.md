@@ -103,4 +103,4 @@ main.js
 		$scope.name = 'World';
 	});
 
-Tiếp theo: [Views, Template & Routing](http://google.com)
+Tiếp theo: [Views, Template & Routing](https://github.com/duythinht/angular-vi-tut/blob/master/template.md)
