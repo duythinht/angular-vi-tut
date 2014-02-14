@@ -104,3 +104,10 @@ script.js
 * ngRoute là module hỗ trợ routing url cho angular
 * app.config là method cho phép khai báo các Controller, View tương ứng với url
 * $routeProvider.otherwise xử lý cho route mặc định
+
+## Ngoài lề
+Trên đây là hướng dẫn để bạn có thể thực hiện được 80% project bằng angular. Ngoài ra để ứng dụng trở nên linh động hơn bạn có thể coi thêm về tài liệu chính thức của angular:
+* [Official Documents](http://docs.angularjs.org/guide/)
+* [Services](http://docs.angularjs.org/guide/dev_guide.services.understanding_services)
+* [Directive](http://docs.angularjs.org/guide/directive)
+* [AngularUI](http://angular-ui.github.io/)
