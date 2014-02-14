@@ -102,3 +102,5 @@ main.js
 	app.controller('ExampleController', function($scope) {
 		$scope.name = 'World';
 	});
+
+Tiếp theo: [Views, Template & Routing](http://google.com)
